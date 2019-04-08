@@ -2,11 +2,27 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Title of the document</title>
+<title>Laboratorio</title>
 </head>
 
 <body>
-Content of the document......
+<input type="text" id="fieldUser"><br>
+<input type="password" id="fieldPass"><br>
+<button id="btnLogin" onclick="inicio()">Log in</button>
+<script>
+function inicio() {
+	var user=document.getElementById("fieldUser").value;
+	var pass=document.getElementById("fieldPass").value;
+	
+	if (user == pass)
+		alert("estas logueado!");
+	else
+		alert("intenta de nuevo :c");
+		
+		document.getElementById("fieldUser").value = "";
+		document.getElementById("fieldPass").value = "";
+}
+</script>
 </body>
 
 </html>
